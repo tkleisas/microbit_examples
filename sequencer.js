@@ -1,11 +1,11 @@
 let timer = 0
 let notes: number[] = []
-let index = 0
 let number = 0
+let index = 0
 let noteon = false
 let noteval = 0
-let patternlength = 0
 let tempo = 0
+let patternlength = 0
 let state = 0
 let currnote = 0
 input.onButtonPressed(Button.AB, () => {
@@ -17,7 +17,7 @@ input.onButtonPressed(Button.AB, () => {
     }
 })
 function setLength()  {
-    patternlength = 1 + 16 * (input.acceleration(Dimension.X) + 1024) / 2048
+    patternlength = 1 + 16 * (input.acceleration(Dimension.Y) + 1024) / 2048
     if (patternlength < 1) {
         patternlength = 1
     } else if (patternlength > 16) {
@@ -34,14 +34,14 @@ function runSequencer()  {
         # # # . .
         # # # . .
         `)
-    music.playTone(notes[index], music.beat(BeatFraction.Whole))
+    music.playTone(notes[index], music.beat(BeatFraction.Sixteenth))
     index += 1
     if (index > patternlength - 1) {
         index = 0
     }
 }
 function setTempo()  {
-    tempo = 20 + 100 * (input.acceleration(Dimension.X) + 1024) / 2048
+    tempo = 20 + 100 * (input.acceleration(Dimension.Y) + 1024) / 2048
     basic.showString("T=" + tempo)
     music.setTempo(tempo)
 }
