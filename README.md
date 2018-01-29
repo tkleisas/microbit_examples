@@ -8,9 +8,13 @@ You can find a video in youtube here: https://www.youtube.com/watch?v=B6xTvOjSI_
 
 The number 123 written using the leds (LED OFF is represented by . and LED ON is represented by #:
 `.....`
+
 `.....`
+
 `....#`
+
 `..#.#`
+
 `#.#.#`
 
 So, the first column of leds from the bottom indicates the hundreds (1).
@@ -19,8 +23,12 @@ The fourth and fifth columns represent the last digit (3)
 
 The biggest number That we can display is 599 and it looks like this:
 `#.#.#`
+
 `#####`
+
 `#####`
+
 `#####`
+
 `#####`
 
