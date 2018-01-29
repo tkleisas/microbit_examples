@@ -7,6 +7,7 @@ You can find a video in youtube here: https://www.youtube.com/watch?v=B6xTvOjSI_
 3. displaynumber.js How can I display a bigger number without scrolling the screen? By using an alternate representation. In this example it is shown how the microbit can display numbers 0 to 599. How we do that? Take a look at the example below:
 
 The number 123 written using the leds (LED OFF is represented by . and LED ON is represented by #:
+
 `.....`
 
 `.....`
@@ -22,6 +23,7 @@ The second and third columns represent the decades (2).
 The fourth and fifth columns represent the last digit (3)
 
 The biggest number That we can display is 599 and it looks like this:
+
 `#.#.#`
 
 `#####`
