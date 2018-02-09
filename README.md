@@ -34,3 +34,4 @@ The biggest number That we can display is 599 and it looks like this:
 
 `#####`
 
+4. greekled.js Display greek text on the microbit. based on: https://makecode.microbit.org/pkg/mbitfun/pxt-katakana
